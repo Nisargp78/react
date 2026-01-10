@@ -1,0 +1,22 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: white;
+}
+.Card {
+  margin: 20px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+  background-color: #222;
+  color: white;
+  border-radius: 20px;
+}
