@@ -1,9 +1,12 @@
+import UsestateAdvance from "./component/usestateAdvance";
+import UsestateSimple from "./component/usestateSimple";
+
 const App = () => {
   return (
-    <div>
-      <h1>App</h1>
-    </div>
-  );
-};
+    <>
+    <UsestateAdvance />
+    </>
+  )
+}
 
 export default App;

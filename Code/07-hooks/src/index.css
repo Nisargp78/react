@@ -1,0 +1,33 @@
+body{
+  background: #222;
+}
+.box{
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color:rgb(113, 113, 113);
+  border-radius: 10px;
+}
+
+h1{
+  text-align: center;
+  font-family: Arial, Helvetica;
+  color: rgb(190, 190, 190);
+  font-size: 4rem;
+}
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+}
+button{
+  background: #b9b9b9;
+  color: rgb(34, 34, 34);
+  font-size: 2rem;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
