@@ -1,0 +1,26 @@
+body{
+  background: #000;
+  color: white;
+  margin: 0%;
+  padding: 0%;
+  height: 100vh;
+}
+.nav{
+  display: flex;
+  padding: 10px 40px;
+  background-color:steelblue;
+  justify-content: space-between;
+  align-items: center;
+}
+.links{
+  display: flex;
+  gap:10px;
+}
+a{
+  text-decoration: none;
+  color: white;
+  font-size: large;
+}
+.page{
+  padding: 20px;
+}
