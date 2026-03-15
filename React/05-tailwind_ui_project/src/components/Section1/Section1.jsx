@@ -1,5 +1,6 @@
 import Navbar from "./Navbar.jsx";
 import PageContent from "./PageContent.jsx";
+import 'remixicon/fonts/remixicon.css';
 
 const Section1 = (props) => {
   return (

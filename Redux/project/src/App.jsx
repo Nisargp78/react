@@ -1,23 +1,21 @@
-import { fetchGIF, fetchPhotos, fetchVideos } from "./api/MediaApi"
-import SearchBar from "./components/SearchBar";
-
+import { Route, Routes } from 'react-router-dom'
+import HomePage from './pages/HomePage'
+import CollectionPage from './pages/CollectionPage'
+import Navbar from './components/Navbar'
+import { ToastContainer } from 'react-toastify';
+  
 const App = () => {
-
   return (
-    <div className="h-screen w-full bg-gray-950 text-white">
-      <SearchBar />
-      <button className="bg-green-900 text-white m-5 p-5" onClick={async ()=>{
-        const data = await fetchPhotos('cat')
-        console.log(data.results);
-      }}>Get Photos</button>
-      <button className="bg-green-900 text-white m-5 p-5" onClick={async ()=>{
-        const data = await fetchVideos('cat')
-        console.log(data.videos);
-      }}>Get Videos</button>
-      <button className="bg-green-900 text-white m-5 p-5" onClick={async ()=>{
-        const data = await fetchGIF('cat')
-        console.log(data.results);
-      }}>Get GIFS</button>
+    <div className="min-h-screen text-white w-full bg-gray-950">
+
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/collection' element={<CollectionPage />} />
+      </Routes>
+
+      <ToastContainer />
+
     </div>
   )
 }

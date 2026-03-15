@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import {useDispatch} from 'react-redux'
+import { setQuery } from '../redux/features/searchSlice'
 
 const SearchBar = () => {
 
@@ -10,7 +11,6 @@ const SearchBar = () => {
   const submitHandler = (e) => {
     e.preventDefault()
     dispatch(setQuery(text))
-    setText('');
   }
 
   return (
@@ -23,11 +23,11 @@ const SearchBar = () => {
         onChange={(e)=>{
           setText(e.target.value)
         }} 
-        className='px-2 py-2 border-2 w-full rounded outline-none' 
+        className='px-5 py-2 border-2 w-full rounded outline-none' 
         type="text"
         placeholder='Enter Something...' 
         required/>
-        <button className="px-2 py-2 border-2 rounded outline-none cursor-pointer active:scale-95">Search</button>
+        <button className="px-6 py-2 border-2 rounded outline-none cursor-pointer active:scale-95">Search</button>
       </form>
     </div>
   )
